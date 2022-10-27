@@ -10,10 +10,10 @@ from helper import MenuState
 from settings import Setting
 
 settings = Setting()
-
 logging.basicConfig(level=logging.DEBUG)
 
-API_TOKEN = settings.conf.defaults()['token']
+API_TOKEN = '1587078195:AAEIPrGErBtyufm4PXsFyMnqfEgszYOg5G4'
+
 bot = Bot(token=API_TOKEN)
 storage = MemoryStorage()
 dp = Dispatcher(bot, storage=storage)
